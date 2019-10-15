@@ -60,9 +60,29 @@ def main():
 
 
 
+class student(object):
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
 
-    
-    
+    def study(self,course_name):
+        print("%s study %s" %(self.name,course_name))
+
+    def watch(self):
+        if self.age <=18:
+            print("Only watch xiyangyang")
+        else:
+            print("You can see others")
+
+def main():
+    std1=student('zhangyaqing',20)
+    std1.study('python')
+    std1.watch()
+
+    std2=student("da chui",15)
+    std2.watch()
+
+
 if __name__ == '__main__':
     main()
-                    
+
